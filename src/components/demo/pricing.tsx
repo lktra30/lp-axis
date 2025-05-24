@@ -145,6 +145,7 @@ export default function Pricing() {
                         ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white hover:shadow-lg"
                         : "border border-gray-300 dark:border-[#2f0f39]/30 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-[#1a1324]"
                     )}
+                    onClick={() => window.open(plan.buttonLink, '_blank')}
                   >
                     {plan.buttonText}
                   </button>
