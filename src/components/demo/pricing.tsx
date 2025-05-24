@@ -6,7 +6,7 @@ import { openCalModal } from "./booking";
 
 const plans = [
   {
-    name: "Basic",
+    name: "Essential",
     price: "R$1990",
     period: "/mês",
     features: [
@@ -16,33 +16,36 @@ const plans = [
       
     ], 
     buttonText: "Assinar",
-    variant: "solid"
+    variant: "solid",
+    buttonLink: "https://buy.stripe.com/cNi28r6Mza5c01T0Ji3VC00"
   },
   {
-    name: "Pro",
+    name: "Growth",
     price: "R$3100",
     period: "/mês",
     features: [
       "Soluções Ilimitadas",
       "Até 5 Setores Internos",
-      "1 Consultoria de Mensal",
+      "1 Consultoria Mensal",
       
     ],
     buttonText: "Assinar",
-    variant: "solid"
+    variant: "solid",
+    buttonLink: "https://buy.stripe.com/dRm8wPfj53GO8ypeA83VC01"
   },
   {
-    name: "Business",
+    name: "Scale",
     price: "R$4200",
     period: "/mês",
     features: [
       "Soluções Ilimitadas",
       "Até 8 Setores Internos",
-      "1 Consultoria de Semanal",
-      "Workshop Trimestral"
+      "1 Consultoria Semanal",
+      "1 Workshop Trimestral"
     ],
     buttonText: "Assinar",
-    variant: "solid"
+    variant: "solid",
+    buttonLink: "https://buy.stripe.com/cNidR97QDgtA7ul9fO3VC02"
   },
   {
     name: "Enterprise",
@@ -51,11 +54,12 @@ const plans = [
     features: [
       "Soluções Ilimitadas",
       "Todos os Setores Internos",
-      "1 Consultoria de Semanal",
-      "Workshop Mensal"
+      "Acompanhamento Semanal",
+      "1 Workshop Mensal"
     ],
     buttonText: "Entrar em contato",
-    variant: "outline"
+    variant: "outline",
+    buttonLink: ""
   }
 ];
 

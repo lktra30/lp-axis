@@ -20,7 +20,7 @@ export function NavbarDemo() {
       link: "#techstack",
     },
     {
-      name: "Preço",
+      name: "Planos",
       link: "#pricing",
     },
     {
@@ -70,6 +70,7 @@ export function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
+                href="https://billing.stripe.com/p/login/cNi28r6Mza5c01T0Ji3VC00"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full"

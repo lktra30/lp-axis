@@ -46,7 +46,7 @@ export default function Hero() {
                     
                     <div className="hidden sm:flex flex-col sm:flex-row gap-4 mt-8">
                         <Link href="#pricing" className="bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] hover:from-[#3a1546] hover:to-[#6b2886] text-white font-medium text-lg px-8 py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 inline-block text-center">
-                            Ver preços
+                            Ver Planos
                         </Link>
                         <Link href="#" onClick={openCalModal} className="border-2 border-[#2f0f39] dark:border-[#6c2a8f] text-[#2f0f39] dark:text-[#b668e9] hover:bg-[#2f0f39]/5 dark:hover:bg-[#6c2a8f]/10 font-medium text-lg px-8 py-4 rounded-lg transition-colors inline-block text-center">
                             Agendar call de 15min
@@ -91,7 +91,7 @@ export default function Hero() {
                             </p>
                             
                             <Link href="#precing" className="w-full bg-white text-[#2f0f39] hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition-colors inline-block text-center">
-                                Ver preços
+                                Ver Planos
                             </Link>
                             
                             <div className="mt-8 flex items-center">

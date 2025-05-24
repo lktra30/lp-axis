@@ -26,7 +26,7 @@ const milestones = [
   },
   {
     number: 3,
-    title: "Receba em 7 dias",
+    title: "Receba em dias",
     description: "Receba sua solução em até 7 dias, mantendo velocidade e qualidade",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
