@@ -90,7 +90,7 @@ export default function Hero() {
                                 Uma assinatura para todas as suas necessidades técnicas.
                             </p>
                             
-                            <Link href="#precing" className="w-full bg-white text-[#2f0f39] hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                            <Link href="#pricing" className="w-full bg-white text-[#2f0f39] hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition-colors inline-block text-center">
                                 Ver Planos
                             </Link>
                             

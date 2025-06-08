@@ -12,8 +12,9 @@ const plans = [
     features: [
       "Soluções Ilimitadas",
       "Até 3 Setores Internos",
-      "1 Consultoria de Setup"
-      
+      "Suporte 24/7",
+      "Onboarding Automático",
+      "Interface de Controle"
     ], 
     buttonText: "Assinar",
     variant: "solid",
@@ -26,8 +27,9 @@ const plans = [
     features: [
       "Soluções Ilimitadas",
       "Até 5 Setores Internos",
-      "1 Consultoria Mensal",
-      
+      "Suporte 24/7",
+      "Onboarding Automático",
+      "Interface de Controle",
     ],
     buttonText: "Assinar",
     variant: "solid",
@@ -40,8 +42,9 @@ const plans = [
     features: [
       "Soluções Ilimitadas",
       "Até 8 Setores Internos",
-      "1 Consultoria Semanal",
-      "1 Workshop Trimestral"
+      "Suporte 24/7",
+      "Onboarding Automático",
+      "Interface de Controle",
     ],
     buttonText: "Assinar",
     variant: "solid",
@@ -54,8 +57,9 @@ const plans = [
     features: [
       "Soluções Ilimitadas",
       "Todos os Setores Internos",
-      "Acompanhamento Semanal",
-      "1 Workshop Mensal"
+      "Suporte 24/7",
+      "Onboarding Personalizado",
+      "Interface de Controle",
     ],
     buttonText: "Entrar em contato",
     variant: "outline",
@@ -77,7 +81,7 @@ export default function Pricing() {
           >
             Planos de Assinatura
           </motion.span>
-          <p className="text-gray-600 dark:text-gray-400 mt-2">
+          <p className="text-gray-600 dark:text-gray-300 mt-2">
             Escolha o plano ideal para sua empresa
           </p>
         </div>
@@ -85,7 +89,7 @@ export default function Pricing() {
           {plans.map((plan, idx) => (
             <motion.div
               key={idx}
-              className="rounded-2xl overflow-hidden border border-gray-200 dark:border-[#2f0f39]/30 bg-white dark:bg-[#16121e] shadow-md"
+              className="rounded-2xl overflow-hidden border border-gray-200 dark:border-[#2f0f39]/30 bg-white dark:bg-[#16121e] shadow-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#6c2a8f]/20 dark:hover:shadow-[#6c2a8f]/30 group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -94,9 +98,9 @@ export default function Pricing() {
               {/* Top stripe */}
               <div
                 className={cn(
-                  "h-1",
+                  "h-1 transition-all duration-300 group-hover:shadow-lg",
                   plan.variant === "solid"
-                    ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f]"
+                    ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] group-hover:shadow-[#6c2a8f]/60"
                     : "bg-gray-300 dark:bg-[#2f0f39]/10"
                 )}
               />
@@ -140,7 +144,7 @@ export default function Pricing() {
                 <div className="mt-6">
                   <button
                     className={cn(
-                      "w-full py-3 rounded-lg font-medium transition",
+                      "transition duration-300 hover:scale-105 w-full py-3 rounded-lg font-medium transition cursor-pointer",
                       plan.variant === "solid"
                         ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white hover:shadow-lg"
                         : "border border-gray-300 dark:border-[#2f0f39]/30 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-[#1a1324]"
@@ -168,10 +172,10 @@ export default function Pricing() {
             <span className="text-md md:text-2xl font-medium">É só isso. Simples assim.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <button className="sm:w-auto w-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white py-3 px-8 rounded-full font-medium shadow-lg transform transition hover:scale-105">
+            {/* <button className="sm:w-auto w-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white py-3 px-8 rounded-full font-medium shadow-lg transform transition hover:scale-105">
               Assinar agora
-            </button>
-            <button className="sm:w-auto w-full text-[#2f0f39] dark:text-[#b668e9] border-2 border-[#2f0f39] dark:border-[#b668e9] py-3 px-8 rounded-full font-medium transition hover:bg-[#2f0f39] dark:hover:bg-[#b668e9] hover:text-white hover:shadow-lg" onClick={openCalModal}>
+            </button> */}
+            <button className="sm:w-auto w-full text-[#2f0f39] dark:text-[#b668e9] border-2 border-[#2f0f39] dark:border-[#b668e9] py-3 px-8 rounded-full font-medium transition hover:bg-[#2f0f39] dark:hover:bg-[#b668e9] hover:text-white hover:shadow-lg cursor-pointer" onClick={openCalModal}>
               Falar com especialista
             </button>
           </div>

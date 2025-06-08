@@ -73,7 +73,7 @@ export function NavbarDemo() {
                 href="https://billing.stripe.com/p/login/cNi28r6Mza5c01T0Ji3VC00"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full"
+                className="w-full cursor-pointer"
               >
                 Login
               </NavbarButton>

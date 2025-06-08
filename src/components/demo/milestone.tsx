@@ -7,7 +7,7 @@ const milestones = [
   {
     number: 1,
     title: "Envie sua demanda",
-    description: "Envie sua demanda pela plataforma de forma simples e direta",
+    description: "Adicione sua ideia no quadro de tarefas, simples e direto",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -17,7 +17,7 @@ const milestones = [
   {
     number: 2,
     title: "Alinhe expectativas",
-    description: "Alinhe suas expectativas com a Axis para garantir resultados ideais",
+    description: "Converse com o time de especialistas para alinhar pontos importantes do projeto, sem complicação",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -37,7 +37,7 @@ const milestones = [
   {
     number: 4,
     title: "Aprove e Ajuste",
-    description: "Você aprova e pode requisitar ajustes a solução sem complicação",
+    description: "Você aprova e pode requisitar ajustes a solução quantas vezes precisar",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -72,7 +72,7 @@ export default function Milestone() {
             transition={{ duration: 0.7, delay: 0.2 }}
           ></motion.div>
           <motion.p 
-            className="mt-4 text-sm md:text-base text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto"
+            className="mt-4 text-sm md:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

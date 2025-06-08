@@ -93,7 +93,7 @@ export default function Benefits() {
           </motion.div>
           
           <motion.p 
-            className="mt-6 text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto"
+            className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

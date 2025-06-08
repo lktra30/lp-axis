@@ -156,7 +156,7 @@ export default function FAQ() {
                     Tire suas dúvidas em uma conversa rápida de 15 minutos.
                   </p>
                   
-                  <button className="w-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] hover:from-[#3a1546] hover:to-[#6b2886] text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1" onClick={openCalModal}>
+                  <button className="w-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] hover:from-[#3a1546] hover:to-[#6b2886] text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer" onClick={openCalModal}>
                     Agendar agora
                   </button>
                 </div>
