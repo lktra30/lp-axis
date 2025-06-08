@@ -17,7 +17,7 @@ const milestones = [
   {
     number: 2,
     title: "Alinhe expectativas",
-    description: "Converse com o time de especialistas para alinhar pontos importantes do projeto, sem complicação",
+    description: "Converse com o time de especialistas para alinhar pontos importantes do projeto",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
@@ -78,7 +78,7 @@ export default function Milestone() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Um processo simplificado para transformar suas necessidades em soluções reais
+            Um processo unificado e simplificado, 100% via Trello, para transformar suas necessidades em soluções reais
           </motion.p>
         </div>
 
