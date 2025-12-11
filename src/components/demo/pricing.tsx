@@ -1,185 +1,91 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { openCalModal } from "./booking";
-
-const plans = [
-  {
-    name: "Essential",
-    price: "R$1990",
-    period: "/mês",
-    features: [
-      "Soluções Ilimitadas",
-      "Até 3 Setores Internos",
-      "Suporte 24/7",
-      "Onboarding Automático",
-      "Interface de Controle"
-    ], 
-    buttonText: "Assinar",
-    variant: "solid",
-    buttonLink: "https://buy.stripe.com/cNi28r6Mza5c01T0Ji3VC00"
-  },
-  {
-    name: "Growth",
-    price: "R$3100",
-    period: "/mês",
-    features: [
-      "Soluções Ilimitadas",
-      "Até 5 Setores Internos",
-      "Suporte 24/7",
-      "Onboarding Automático",
-      "Interface de Controle",
-    ],
-    buttonText: "Assinar",
-    variant: "solid",
-    buttonLink: "https://buy.stripe.com/dRm8wPfj53GO8ypeA83VC01"
-  },
-  {
-    name: "Scale",
-    price: "R$4200",
-    period: "/mês",
-    features: [
-      "Soluções Ilimitadas",
-      "Até 8 Setores Internos",
-      "Suporte 24/7",
-      "Onboarding Automático",
-      "Interface de Controle",
-    ],
-    buttonText: "Assinar",
-    variant: "solid",
-    buttonLink: "https://buy.stripe.com/cNidR97QDgtA7ul9fO3VC02"
-  },
-  {
-    name: "Enterprise",
-    price: null,
-    period: null,
-    features: [
-      "Soluções Ilimitadas",
-      "Todos os Setores Internos",
-      "Suporte 24/7",
-      "Onboarding Personalizado",
-      "Interface de Controle",
-    ],
-    buttonText: "Entrar em contato",
-    variant: "outline",
-    buttonLink: ""
-  }
-];
 
 export default function Pricing() {
   return (
-    <section className="py-24 bg-neutral-50 dark:bg-[#0c0812]">
+    <section id="pricing" className="py-24 bg-white dark:bg-[#0c0812]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-        <motion.span 
-            className="text-sm uppercase tracking-wider text-[#6c2a8f] dark:text-[#b668e9] "
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+        <div className="max-w-4xl mx-auto">
+          {/* CTA Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.6 }}
           >
-            Planos de Assinatura
-          </motion.span>
-          <p className="text-gray-600 dark:text-gray-300 mt-2">
-            Escolha o plano ideal para sua empresa
-          </p>
+            <div className="text-center">
+              {/* Badge */}
+              <motion.span 
+                className="inline-block text-sm uppercase tracking-wider text-[#6c2a8f] dark:text-[#b668e9] bg-[#6c2a8f]/10 dark:bg-[#b668e9]/10 px-4 py-2 rounded-full mb-6"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                Pronto para começar?
+              </motion.span>
+              
+              {/* Main headline */}
+              <motion.h2
+                className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                Vamos conversar sobre sua{" "}
+                <span className="text-[#2f0f39] dark:text-[#b668e9]">próxima solução</span>
+              </motion.h2>
+              
+              {/* Subheadline */}
+              <motion.p
+                className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                Agende uma conversa de 15 minutos com nosso time e descubra como a AXIS pode transformar sua operação com IA.
+              </motion.p>
+              
+              {/* CTA Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                <button 
+                  onClick={openCalModal}
+                  className="inline-flex items-center justify-center px-10 py-5 text-[#6c2a8f] dark:text-[#b668e9] text-lg font-medium border-2 border-[#6c2a8f] dark:border-[#b668e9] rounded-full hover:bg-[#6c2a8f] dark:hover:bg-[#b668e9] hover:text-white dark:hover:text-white transition-all duration-300 cursor-pointer"
+                >
+                  Entrar em Contato
+                  <svg className="ml-3 w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              </motion.div>
+              
+              {/* Quote */}
+              <motion.div
+                className="mt-16 pt-10"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] bg-clip-text text-transparent">
+                  <span className="italic">&ldquo;Você traz a dor. A <span className="text-[#b668e9]">Axis</span> entrega a solução. RÁPIDO!&rdquo;</span>
+                </p>
+                <p className="text-md md:text-lg text-gray-500 dark:text-gray-400 mt-2">
+                  É só isso. Simples assim.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {plans.map((plan, idx) => (
-            <motion.div
-              key={idx}
-              className="rounded-2xl overflow-hidden border border-gray-200 dark:border-[#2f0f39]/30 bg-white dark:bg-[#16121e] shadow-md transition-all duration-300 hover:shadow-2xl hover:shadow-[#6c2a8f]/20 dark:hover:shadow-[#6c2a8f]/30 group"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-            >
-              {/* Top stripe */}
-              <div
-                className={cn(
-                  "h-1 transition-all duration-300 group-hover:shadow-lg",
-                  plan.variant === "solid"
-                    ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] group-hover:shadow-[#6c2a8f]/60"
-                    : "bg-gray-300 dark:bg-[#2f0f39]/10"
-                )}
-              />
-              <div className="p-6 flex flex-col h-full">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  {plan.name}
-                </h3>
-                {plan.price ? (
-                  <div className="text-4xl font-bold text-gray-900 dark:text-white">
-                    {plan.price}
-                    <span className="text-lg font-normal ml-1 text-gray-600 dark:text-gray-400">
-                      {plan.period}
-                    </span>
-                  </div>
-                ) : (
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    Entrar em contato
-                  </div>
-                )}
-                <ul className="mt-6 space-y-2 flex-grow">
-                  {plan.features.map((feat, i) => (
-                    <li key={i} className="flex items-center text-gray-600 dark:text-gray-400">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5 text-green-500 mr-2 flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {feat}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6">
-                  <button
-                    className={cn(
-                      "transition duration-300 hover:scale-105 w-full py-3 rounded-lg font-medium transition cursor-pointer",
-                      plan.variant === "solid"
-                        ? "bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white hover:shadow-lg"
-                        : "border border-gray-300 dark:border-[#2f0f39]/30 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-[#1a1324]"
-                    )}
-                    onClick={() => window.open(plan.buttonLink, '_blank')}
-                  >
-                    {plan.buttonText}
-                  </button>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        
-        {/* Final CTA */}
-        <motion.div
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <p className="text-3xl md:text-4xl font-bold text-white mb-6 bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] bg-clip-text text-transparent">
-            <span className="italic">&ldquo;Você traz a dor. A <span className="text-[#b668e9]">Axis</span> entrega a solução. RÁPIDO!&rdquo;</span><br/>
-            <span className="text-md md:text-2xl font-medium">É só isso. Simples assim.</span>
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            {/* <button className="sm:w-auto w-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white py-3 px-8 rounded-full font-medium shadow-lg transform transition hover:scale-105">
-              Assinar agora
-            </button> */}
-            <button className="sm:w-auto w-full text-[#2f0f39] dark:text-[#b668e9] border-2 border-[#2f0f39] dark:border-[#b668e9] py-3 px-8 rounded-full font-medium transition hover:bg-[#2f0f39] dark:hover:bg-[#b668e9] hover:text-white hover:shadow-lg cursor-pointer" onClick={openCalModal}>
-              Falar com especialista
-            </button>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
