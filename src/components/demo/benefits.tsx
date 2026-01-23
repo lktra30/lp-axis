@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const benefits = [
   {
     title: "Quadro de controle",
-    description: "Gerencie facilmente sua fila de projetos com um quadro Trello.",
+    description: "Gerencie facilmente seus sistemas em dashboard unico e integrado.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
@@ -49,8 +49,8 @@ const benefits = [
     textColor: "text-[#b668e9]"
   },
   {
-    title: "Soluções ilimitadas",
-    description: "Uma única mensalidade e receba quantos projetos você precisar, um por um.",
+    title: "Uso ilimitado",
+    description: "Adicione quantos projetos quiser à sua fila e receba um por um.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -68,9 +68,9 @@ export default function Benefits() {
         {/* Background decoration */}
         <div className="absolute -left-20 top-1/4 w-64 h-64 bg-gradient-to-tr from-[#2f0f39]/10 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute -right-20 bottom-1/4 w-64 h-64 bg-gradient-to-bl from-[#6c2a8f]/10 to-transparent rounded-full blur-3xl"></div>
-        
+
         <div className="text-center mb-16 relative z-10">
-          <motion.span 
+          <motion.span
             className="text-sm uppercase tracking-wider text-[#6c2a8f] dark:text-[#b668e9] "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -79,8 +79,8 @@ export default function Benefits() {
           >
             BENEFÍCIOS DA ASSINATURA
           </motion.span>
-          
-          <motion.div 
+
+          <motion.div
             className="mt-4 space-y-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,15 +91,15 @@ export default function Benefits() {
               <span className="italic ">Velocidade e qualidade</span>
             </h2>
           </motion.div>
-          
-          <motion.p 
+
+          <motion.p
             className="mt-6 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            A Axis substitui freelancers não confiáveis e agências caras por uma taxa mensal fixa, 
+            A Axis substitui freelancers não confiáveis e agências caras por uma taxa mensal fixa,
             com soluções entregues tão rápido que você não vai querer ir a outro lugar.
           </motion.p>
         </div>
@@ -112,7 +112,7 @@ export default function Benefits() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </div>
-          
+
           <div className="overflow-x-auto overflow-y-hidden pb-4 md:pb-0 scrollbar-hide md:overflow-visible">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 relative md:gap-6 md:grid">
               {/* No mobile: flex row com largura fixa */}
@@ -138,7 +138,7 @@ export default function Benefits() {
                       )}>
                         {/* Grid pattern overlay */}
                         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                        
+
                         {/* Icon with glitter effect */}
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white relative overflow-hidden">
@@ -148,7 +148,7 @@ export default function Benefits() {
                           </div>
                         </div>
                       </div>
-                      
+
                       {/* Content */}
                       <div className="p-5 bg-white dark:bg-[#16121e] border border-neutral-100 dark:border-[#2f0f39]/30 flex-1 flex flex-col">
                         <h3 className="text-lg mb-2 text-neutral-900 dark:text-neutral-100">{benefit.title}</h3>
@@ -158,7 +158,7 @@ export default function Benefits() {
                   </motion.div>
                 ))}
               </div>
-              
+
               {/* No desktop: grid normal */}
               {benefits.map((benefit, index) => (
                 <motion.div
@@ -181,7 +181,7 @@ export default function Benefits() {
                     )}>
                       {/* Grid pattern overlay */}
                       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:20px_20px] opacity-30"></div>
-                      
+
                       {/* Icon with glitter effect */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center text-white relative overflow-hidden">
@@ -191,7 +191,7 @@ export default function Benefits() {
                         </div>
                       </div>
                     </div>
-                    
+
                     {/* Content */}
                     <div className="p-5 bg-white dark:bg-[#16121e] border border-neutral-100 dark:border-[#2f0f39]/30 flex-1 flex flex-col">
                       <h3 className="text-lg mb-2 text-neutral-900 dark:text-neutral-100">{benefit.title}</h3>
@@ -203,8 +203,8 @@ export default function Benefits() {
             </div>
           </div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           className="text-center mt-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

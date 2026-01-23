@@ -26,6 +26,7 @@ export default function RootLayout({
     <html lang="pt-BR" className="dark">
       <body
         className={`${geistSans.className} ${geistMono.className} antialiased bg-[#0c0812]`}
+        suppressHydrationWarning
       >
         {children}
       </body>
