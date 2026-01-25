@@ -40,7 +40,7 @@ export default function Hero() {
                     </h1>
                     
                     <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
-                        A Axis substitui freelancers não confiáveis e agências caras com soluções em IA e automações com uma mensalidade fixa
+                        A Axis substitui freelancers não confiáveis e agências caras por soluções em sistemas de IA e automações em uma mensalidade fixa
                     </p>
                     
                     <div className="hidden sm:flex flex-col sm:flex-row gap-4 mt-8">

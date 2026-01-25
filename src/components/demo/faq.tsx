@@ -14,27 +14,23 @@ interface FAQItem {
 const faqData: FAQItem[] = [
   {
     question: "Quem são os especialistas?",
-    answer: "Axis é uma empresa em dupla, formada por um especialista em automação e IA, e um especialista em gestão e marketing. Uma equipe pequena, garantindo agilidade e qualidade padronizada nas entregas."
+    answer: "A Axis é uma plataforma desenvolvida por três especialistas: um em automação e sistemas de IA, um em gestão e processos, e um em marketing e vendas. Uma equipe pequena, que buscou unir experiência e visão para desenvolver uma solução que garante agilidade e qualidade padronizada nas entregas, com o objetivo de revolucionar o mercado de soluções técnicas."
   },
   {
-    question: "Existe um limite de quantos projetos posso realizar?",
-    answer: "Não há limite no número total de projetos que você pode realizar durante sua assinatura. A única regra é que cada novo projeto só entra na fila de implementação após a entrega do anterior, seguindo nosso fluxo de trabalho para garantir qualidade e agilidade."
+    question: "Existe um limite de quantos planos posso assinar?",
+    answer: "Não há limite no número total de assinaturas dos planos referentes aos produtos, a única regra é que cada novo produto só entra na fila de implementação após o onboarding do anterior, seguindo o fluxo de trabalho da plataforma para garantir qualidade e agilidade."
   },
   {
     question: "Como funciona a opção de pausar a assinatura?",
-    answer: "Entendemos que sua empresa pode ter períodos com necessidades diferentes. Por isso, oferecemos a opção de pausar sua assinatura por um período determinado caso você precise. Durante a pausa, não receberá cobranças, mas também não poderá iniciar novos projetos. Nosso sistema de cobrança é feito em ciclos de 30 dias. Vamos supor você use somente por 20 dias, e decida pausar a assinatura. Isso significa que o ciclo de cobrança será pausado e você terá 10 dias de serviço sobrando para quando reativar a assinatura."
-  },
-  {
-    question: "Com quais tecnologias vocês trabalham?",
-    answer: "Trabalhamos com uma ampla gama de tecnologias, incluindo diversas plataformas de automação, ferramentas de IA, bancos de dados e sistemas de integração. Nossa equipe é versátil e entrega sistemas que se integram perfeitamente com suas ferramentas existentes, como N8N, Make, Supabase, Airtable, CRMs, ERPs, Notion, Trello, Google Workspace, entre muitos outros."
+    answer: "Entendemos que sua empresa pode ter períodos com necessidades diferentes. Por isso, a Axis oferece a opção de pausar sua assinatura por um período determinado caso você precise. Durante a pausa, você não receberá cobranças. Nosso sistema de cobrança é feito em ciclos de 30 dias. Vamos supor que você use somente por 20 dias, e decida pausar a assinatura. Isso significa que o ciclo de cobrança será pausado e você terá 10 dias de acesso sobrando para utilizar a assinatura e depois pode reativar a assinatura."
   },
   {
     question: "Vocês oferecem reembolso?",
-    answer: "Oferecemos um período de avaliação inicial de 7 dias. Se dentro desse período você não estiver satisfeito com nosso serviço e ainda não tiver realizado nenhuma implementação completa, podemos processar um reembolso de 80% do valor da assinatura. Após esse período ou após a primeira entrega, não oferecemos reembolsos, mas garantimos suporte contínuo."
+    answer: "Oferecemos um período de avaliação inicial de 7 dias. Se dentro desse período você não estiver satisfeito com a plataforma de serviços e ainda não tiver realizado nenhuma implementação completa, podemos processar um reembolso de 80% do valor da assinatura. Após esse período ou após a primeira assinatura, não oferecemos reembolsos, mas garantimos suporte contínuo."
   },
   {
-    question: "Posso usar a AXIS por apenas um mês?",
-    answer: "Sim! Nossos planos são mensais e sem fidelidade, então você pode assinar por apenas um mês se desejar. Muitos clientes começam assim para testar o serviço e acabam renovando ao perceber o valor agregado que as nossas soluções trazem para seus negócios. Você terá acesso a todas as funcionalidades da plataforma durante o período contratado."
+    question: "Posso usar a AXIS apenas um mês?",
+    answer: "Sim! Nossos planos são mensais e sem fidelidade, então você pode assinar por apenas um mês se desejar. Muitas empresas começam assim para validar a plataforma e acabam renovando ao perceber o valor agregado que as nossas soluções trazem para suas infraestruturas. Você terá acesso a todas as funcionalidades da plataforma e ao seu plano durante o período de assinatura."
   }
 ];
 

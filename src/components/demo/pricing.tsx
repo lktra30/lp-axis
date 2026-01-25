@@ -5,9 +5,9 @@ import { Check, Bot, Users, Brain, TrendingUp } from "lucide-react";
 
 const plans = [
   {
-    title: "Gestão VSL e Copy",
+    title: "VSL Intelligence",
     description: "Transforme visitantes em clientes com scripts de alta conversão gerados por IA.",
-    price: "R$ 2.997",
+    price: "R$ 597",
     period: "/mês",
     icon: Brain,
     features: [
@@ -20,9 +20,9 @@ const plans = [
     link: "#"
   },
   {
-    title: "CRM Inteligente",
+    title: "Auto CRM",
     description: "Centralize e potencialize seu relacionamento com clientes. Automação completa.",
-    price: "R$ 1.497",
+    price: "R$ 99,90",
     period: "/mês",
     icon: Users,
     features: [
@@ -37,7 +37,7 @@ const plans = [
   {
     title: "Closer Intelligence",
     description: "Relatórios das calls dos seus closers instantaneamente. Aumente seu fechamento.",
-    price: "R$ 3.997",
+    price: "R$ 297,99",
     period: "/mês",
     icon: Bot,
     features: [
@@ -52,7 +52,7 @@ const plans = [
   {
     title: "Inbound Sales Agent",
     description: "Atraia e converta leads qualificados automaticamente. Estratégias turbinadas.",
-    price: "R$ 2.497",
+    price: "R$ 497",
     period: "/mês",
     icon: TrendingUp,
     features: [

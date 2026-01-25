@@ -99,8 +99,8 @@ export default function TechStack() {
                 <div className="mt-8 bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] rounded-xl p-5 text-white shadow-lg">
                   <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
                     <div className="text-center">
-                      <h3 className="text-3xl font-bold mb-1">+50</h3>
-                      <p className="text-sm opacity-80">Soluções entregues</p>
+                      <h3 className="text-3xl font-bold mb-1">+80</h3>
+                      <p className="text-sm opacity-80">soluções entregues</p>
                     </div>
                     <div className="hidden md:block h-12 w-px bg-white/20"></div>
                     <div className="text-center">

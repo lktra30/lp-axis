@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils";
 
 const benefits = [
   {
-    title: "Quadro de controle",
-    description: "Gerencie facilmente seus sistemas em dashboard unico e integrado.",
+    title: "Chat integrado",
+    description: "Gerencie facilmente sua assinatura e produtos em um quadro único e integrado",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
@@ -16,8 +16,8 @@ const benefits = [
     textColor: "text-[#b668e9]"
   },
   {
-    title: "Taxa mensal fixa",
-    description: "Sem preocupações! Pague o mesmo preço fixo todo mês.",
+    title: "Assinatura mensal fixa",
+    description: "Sem preocupações! Pague o valor fixo todo mês.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -27,8 +27,8 @@ const benefits = [
     textColor: "text-[#b668e9]"
   },
   {
-    title: "Entrega rápida",
-    description: "Receba sua solução, uma de cada vez, em poucos dias.",
+    title: "Entrega rápido",
+    description: "Escolha o plano que mais se encaixa no momento da sua empresa, ative e veja os impactos reais",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -38,25 +38,14 @@ const benefits = [
     textColor: "text-[#b668e9]"
   },
   {
-    title: "Sem complicação",
-    description: "Sem freelancers não confiáveis e agências caras. Na palma da sua mão sempre que precisar.",
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-      </svg>
-    ),
-    gradient: "from-[#5c2c81] to-[#6c2a8f]",
-    textColor: "text-[#b668e9]"
-  },
-  {
     title: "Uso ilimitado",
-    description: "Adicione quantos projetos quiser à sua fila e receba um por um.",
+    description: "Assine quantos planos quiser e receba soluções referentes a cada um.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
       </svg>
     ),
-    gradient: "from-[#6c2a8f] to-[#8a42ad]",
+    gradient: "from-[#5c2c81] to-[#6c2a8f]",
     textColor: "text-[#b668e9]"
   }
 ];
@@ -99,7 +88,7 @@ export default function Benefits() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            A Axis substitui freelancers não confiáveis e agências caras por uma taxa mensal fixa,
+            A Axis substitui freelancers não confiáveis e agências caras por uma **assinatura** mensal fixa,
             com soluções entregues tão rápido que você não vai querer ir a outro lugar.
           </motion.p>
         </div>
@@ -114,7 +103,7 @@ export default function Benefits() {
           </div>
 
           <div className="overflow-x-auto overflow-y-hidden pb-4 md:pb-0 scrollbar-hide md:overflow-visible">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 relative md:gap-6 md:grid">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative md:gap-6 md:grid">
               {/* No mobile: flex row com largura fixa */}
               <div className="flex md:hidden space-x-4 pl-4">
                 {benefits.map((benefit, index) => (

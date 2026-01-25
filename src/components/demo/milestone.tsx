@@ -3,32 +3,26 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-import { MousePointerClick, UserPlus, Rocket, TrendingUp } from "lucide-react";
+import { MousePointerClick, UserPlus, Rocket } from "lucide-react";
 
 const milestones = [
   {
     number: 1,
-    title: "Escolha o seu plano",
-    description: "Escolha o produto que mais se encaixa com o seu momento",
+    title: "Escolha o seu produto",
+    description: "Adquira seu produto e siga o passo a passo do onboarding enviado de acordo com seu plano",
     icon: <MousePointerClick className="h-6 w-6" />
   },
   {
     number: 2,
     title: "Realize o cadastro",
-    description: "Realize o cadastro no nosso sistema de forma simples",
+    description: "Realize o cadastro de acordo com o onboarding e alinhe o que for necessário pelo chat, sem complicação",
     icon: <UserPlus className="h-6 w-6" />
   },
   {
     number: 3,
-    title: "Receba em 7 dias",
-    description: "Receba sua nova automação em até 7 dias pronta para uso",
+    title: "Plug-n-play",
+    description: "Receba seus acessos ao produto, implemente na sua operação e veja os resultados",
     icon: <Rocket className="h-6 w-6" />
-  },
-  {
-    number: 4,
-    title: "Plug-n-Play",
-    description: "Implemente na sua operação e comece a ver sua margem aumentando",
-    icon: <TrendingUp className="h-6 w-6" />
   }
 ];
 
@@ -68,9 +62,9 @@ export default function Milestone() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 relative">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 md:gap-6 relative">
           {/* Connecting line for desktop */}
-          <div className="hidden lg:block absolute top-1/4 left-[calc(12.5%+1rem)] right-[calc(12.5%+1rem)] h-0.5 bg-gradient-to-r from-[#2f0f39] via-[#6c2a8f] to-[#b668e9] z-0"></div>
+          <div className="hidden lg:block absolute top-1/4 left-[calc(16.67%+1rem)] right-[calc(16.67%+1rem)] h-0.5 bg-gradient-to-r from-[#2f0f39] via-[#6c2a8f] to-[#b668e9] z-0"></div>
 
           {milestones.map((milestone, index) => (
             <motion.div
