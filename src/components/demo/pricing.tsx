@@ -8,7 +8,7 @@ const plans = [
     title: "VSL Intelligence",
     description: "Transforme visitantes em clientes com scripts de alta conversão gerados por IA.",
     price: "R$ 597",
-    period: "/mês",
+    period: "",
     icon: Brain,
     features: [
       "Roteiros de VSL Persuasivos",
@@ -17,13 +17,15 @@ const plans = [
       "Testes A/B Automatizados"
     ],
     highlight: true,
-    link: "#"
+    link: "/vsl-lp",
+    cta: "Começar Agora",
+    available: true
   },
   {
     title: "Auto CRM",
     description: "Centralize e potencialize seu relacionamento com clientes. Automação completa.",
-    price: "R$ 99,90",
-    period: "/mês",
+    price: "Em produção...",
+    period: "",
     icon: Users,
     features: [
       "Gestão de Leads Centralizada",
@@ -32,13 +34,15 @@ const plans = [
       "Pipeline Visual Personalizável"
     ],
     highlight: false,
-    link: "#"
+    link: "#",
+    cta: "Acesso Antecipado",
+    available: false
   },
   {
     title: "Closer Intelligence",
     description: "Relatórios das calls dos seus closers instantaneamente. Aumente seu fechamento.",
-    price: "R$ 297,99",
-    period: "/mês",
+    price: "Em produção...",
+    period: "",
     icon: Bot,
     features: [
       "Atendimento 24/7",
@@ -47,13 +51,15 @@ const plans = [
       "Treinamento com Base de Dados"
     ],
     highlight: false,
-    link: "#"
+    link: "#",
+    cta: "Acesso Antecipado",
+    available: false
   },
   {
     title: "Inbound Sales Agent",
     description: "Atraia e converta leads qualificados automaticamente. Estratégias turbinadas.",
-    price: "R$ 497",
-    period: "/mês",
+    price: "Em produção...",
+    period: "",
     icon: TrendingUp,
     features: [
       "Nutrição de Leads",
@@ -62,7 +68,9 @@ const plans = [
       "Automação de E-mail Marketing"
     ],
     highlight: false,
-    link: "#"
+    link: "#",
+    cta: "Acesso Antecipado",
+    available: false
   }
 ];
 
@@ -146,21 +154,23 @@ export default function Pricing() {
                {/* Price */}
               <div className="relative z-10 mb-8">
                  <div className="flex items-baseline gap-1">
-                  <span className="text-3xl font-bold text-gray-900 dark:text-white">{plan.price}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-500">{plan.period}</span>
+                  <span className={`text-3xl font-bold ${plan.available ? 'text-gray-900 dark:text-white' : 'text-gray-400 dark:text-gray-500 text-2xl'}`}>{plan.price}</span>
+                  {plan.period && <span className="text-xs text-gray-500 dark:text-gray-500">{plan.period}</span>}
                 </div>
               </div>
 
 
               {/* Button */}
-              <a 
+              <a
                 href={plan.link}
                 className={`w-full py-3 px-4 rounded-lg text-sm font-medium text-center transition-all duration-300 mb-8 z-10 flex items-center justify-center gap-2
-                  ${plan.highlight 
-                    ? 'bg-[#6c2a8f] text-white hover:bg-[#5a2377]' 
-                    : 'bg-gray-100 dark:bg-white/5 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-white/10 border border-transparent dark:border-white/5'}`}
+                  ${plan.highlight
+                    ? 'bg-[#6c2a8f] text-white hover:bg-[#5a2377]'
+                    : plan.available
+                      ? 'bg-gray-100 dark:bg-white/5 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-white/10 border border-transparent dark:border-white/5'
+                      : 'bg-gray-100/50 dark:bg-white/5 text-gray-500 dark:text-gray-400 border border-dashed border-gray-300 dark:border-white/10 cursor-default'}`}
               >
-                Começar Agora
+                {plan.cta}
               </a>
 
               {/* Features Label */}
