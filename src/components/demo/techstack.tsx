@@ -58,10 +58,10 @@ export default function TechStack() {
         {/* Background decorations */}
         <div className="absolute -right-20 top-1/4 w-64 h-64 bg-gradient-to-tr from-[#2f0f39]/10 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute -left-20 bottom-1/3 w-64 h-64 bg-gradient-to-bl from-[#6c2a8f]/10 to-transparent rounded-full blur-3xl"></div>
-        
+
         <div className="max-w-6xl mx-auto">
           {/* Main Title */}
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function TechStack() {
             </h2>
             <div className="h-1 w-20 bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] mx-auto rounded-full mt-4"></div>
           </motion.div>
-          
+
           {/* Main Cards Stacked Vertically */}
           <div className="grid grid-cols-1 gap-8 mb-20">
             {/* About AXIS Card */}
@@ -88,13 +88,13 @@ export default function TechStack() {
                 <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
                   Sobre a <span className="text-[#2f0f39] dark:text-[#b668e9]">AXIS</span>
                 </h3>
-                
+
                 <div className="text-gray-700 dark:text-gray-300 space-y-4">
                   <p>
                     Somos uma plataforma por assinatura que entrega tecnologia de verdade de forma simplificada. Entregamos soluções e sistemas com IA em tempo recorde, para empresas que precisam de velocidade, sem perder qualidade.
                   </p>
                 </div>
-                
+
                 {/* Stats */}
                 <div className="mt-8 bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] rounded-xl p-5 text-white shadow-lg">
                   <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
@@ -105,15 +105,49 @@ export default function TechStack() {
                     <div className="hidden md:block h-12 w-px bg-white/20"></div>
                     <div className="text-center">
                       <h3 className="text-3xl font-bold mb-1">7 dias</h3>
-                      <p className="text-sm opacity-80">Média de entrega</p>
+                      <p className="text-sm opacity-80">Tempo de entrega</p>
                     </div>
                   </div>
                 </div>
-                
+
+                {/* Projetos Entregues */}
+                <div className="mt-12">
+                  <h4 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
+                    Alguns <span className="text-[#2f0f39] dark:text-[#b668e9]">Projetos Entregues</span>
+                  </h4>
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {[
+                      { title: "Dashboard Analytics", category: "BI & Dados" },
+                      { title: "Sistema de Automação", category: "Vendas" },
+                      { title: "Painel de Métricas", category: "Marketing" },
+                      { title: "CRM Personalizado", category: "Gestão" },
+                      { title: "Relatório Inteligente", category: "IA" },
+                      { title: "Pipeline Visual", category: "Operações" }
+                    ].map((project, index) => (
+                      <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                        className="group relative overflow-hidden rounded-lg bg-gradient-to-br from-[#2f0f39]/10 to-[#6c2a8f]/5 border border-[#6c2a8f]/20 p-4 hover:border-[#6c2a8f]/40 transition-all duration-300 cursor-pointer"
+                      >
+                        <div className="aspect-video bg-gradient-to-br from-[#2f0f39]/20 to-[#6c2a8f]/10 rounded-md mb-3 flex items-center justify-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#6c2a8f]/40 dark:text-[#b668e9]/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                          </svg>
+                        </div>
+                        <p className="text-sm font-medium text-gray-900 dark:text-white group-hover:text-[#6c2a8f] dark:group-hover:text-[#b668e9] transition-colors">{project.title}</p>
+                        <span className="text-xs text-gray-500 dark:text-gray-400">{project.category}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Tech Cards */}
               </div>
             </motion.div>
-            
+
             {/* What AXIS Delivers Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -125,7 +159,7 @@ export default function TechStack() {
                 <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
                   A <span className="text-[#2f0f39] dark:text-[#b668e9]">AXIS</span> entrega isso e muito mais
                 </h3>
-                
+
                 {/* Solutions Cards - Vertical Layout */}
                 <div className="space-y-6">
                   {solutions.map((solution, index) => (
@@ -147,10 +181,10 @@ export default function TechStack() {
                     </motion.div>
                   ))}
                 </div>
-                
+
                 {/* CTA Button */}
                 <div className="mt-10 text-center">
-                  <button 
+                  <button
                     onClick={openCalModal}
                     className="inline-flex items-center justify-center px-8 py-4 text-[#6c2a8f] dark:text-[#b668e9] font-medium border-2 border-[#6c2a8f] dark:border-[#b668e9] rounded-full hover:bg-[#6c2a8f] dark:hover:bg-[#b668e9] hover:text-white dark:hover:text-white transition-all duration-300 cursor-pointer"
                   >

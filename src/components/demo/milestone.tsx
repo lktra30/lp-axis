@@ -9,7 +9,7 @@ const milestones = [
   {
     number: 1,
     title: "Escolha o seu produto",
-    description: "Adquira seu produto e siga o passo a passo do onboarding enviado de acordo com seu plano",
+    description: "Adquira seu produto e siga o passo a passo do onboarding enviado de acordo com seu produto",
     icon: <MousePointerClick className="h-6 w-6" />
   },
   {
@@ -117,20 +117,7 @@ export default function Milestone() {
           ))}
         </div>
 
-        <motion.div
-          className="text-center mt-10 md:mt-16"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <a href="#" className="text-[#6c2a8f] dark:text-[#b668e9] text-sm md:text-base font-medium inline-flex items-center border-b border-[#6c2a8f]/40 dark:border-[#b668e9]/40 pb-1 hover:text-[#8a3ec8] hover:border-[#8a3ec8] transition-colors">
-            Ver exemplos de projetos entregues
-            <svg className="ml-2 w-3 h-3 md:w-4 md:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
-        </motion.div>
+
       </div>
     </section>
   );

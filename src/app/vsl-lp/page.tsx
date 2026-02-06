@@ -52,9 +52,10 @@ function HeroSection() {
           className="max-w-4xl mx-auto text-center"
         >
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 dark:text-white leading-tight">
-            Pare de Perder Horas em Relatórios e Ideação de Criativos.{" "}
-            <span className="bg-gradient-to-r from-[#2f0f39] via-[#6c2a8f] to-[#b668e9] bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight mb-8 dark:text-white leading-tight max-w-5xl mx-auto">
+            <span className="block mb-2">Pare de Perder Horas em Relatórios</span>
+            <span className="block mb-4">e Ideação de Criativos.</span>
+            <span className="bg-gradient-to-r from-[#2f0f39] via-[#6c2a8f] to-[#b668e9] bg-clip-text text-transparent block mt-4">
               Tenha um Sistema Inteligente que Analisa, Organiza e Gera Novos Anúncios Automaticamente.
             </span>
           </h1>
@@ -82,7 +83,7 @@ function HeroSection() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 rounded-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
+                  <path d="M8 5v14l11-7z" />
                 </svg>
               </div>
             </div>
@@ -101,9 +102,9 @@ function HeroSection() {
               onClick={openCalModal}
               className="bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] hover:from-[#3a1546] hover:to-[#6b2886] text-white font-bold text-lg px-10 py-5 rounded-xl transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#6c2a8f]/30"
             >
-              QUERO IMPLEMENTAR O SISTEMA AXIS EM 7 DIAS
+              ASSINAR O PRODUTO
               <span className="block text-sm font-normal mt-1 text-white/80">
-                (Fale com um especialista agora)
+                (Assinatura Mensal)
               </span>
             </button>
           </motion.div>
@@ -156,7 +157,7 @@ function PainPointsSection() {
           className="text-center mb-12"
         >
           <span className="inline-block text-sm uppercase tracking-wider text-[#b668e9] bg-[#b668e9]/10 px-4 py-2 rounded-full mb-6">
-            Identificação
+            Como isso me ajuda
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Se Você se Identifica com Alguma Dessas Situações,{" "}
@@ -192,7 +193,7 @@ function PainPointsSection() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center text-lg text-[#b668e9] mt-10 font-medium"
         >
-          Se você reconheceu pelo menos 2 dessas dores, você precisa de um sistema — não de mais pessoas.
+          Se você reconheceu pelo menos 2 dessas dores, você precisa do nosso sistema — não de mais pessoas.
         </motion.p>
       </div>
     </section>
@@ -228,7 +229,7 @@ function SolutionSection() {
             Apresentando: <span className="text-[#b668e9]">O Sistema Axis</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A &quot;Agência Inteligente&quot; que Trabalha 24/7 Analisando, Organizando e Criando Criativos Para Você
+            A Agência Inteligente que Trabalha 24/7 Analisando, Organizando e Criando Criativos Para Você
           </p>
         </motion.div>
 
@@ -335,7 +336,7 @@ function HowItWorksSection() {
             Passo a Passo
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white">
-            Como o Sistema Axis Funciona <span className="text-[#b668e9]">na Prática</span>
+            Sistema Axis <span className="text-[#b668e9]">na Prática</span>
           </h2>
         </motion.div>
 
@@ -381,8 +382,8 @@ function HowItWorksSection() {
 // ==================== WHAT YOU GET SECTION ====================
 const deliverables = [
   "Integração com Meta Ads (via API)",
-  "Painel de controle no Airtable (template pronto)",
-  "Workflows completos no n8n (arquivos JSON prontos)",
+  "Acesso ao Sistema próprio da Axis",
+  "Automação completa de workflows",
   "Prompts de IA otimizados para análise e geração de copy",
   "Biblioteca de criativos vencedores com estrutura documentada",
   "Tutorial de implementação (passo a passo)",
@@ -439,8 +440,8 @@ function WhatYouGetSection() {
             </div>
           </motion.div>
 
-          {/* Bonuses */}
-          <motion.div
+          {/* Bonuses - Hidden based on user request */}
+          {/* <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -467,7 +468,7 @@ function WhatYouGetSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
@@ -489,7 +490,7 @@ const audiences = [
   {
     icon: Users,
     title: "Equipes In-House",
-    description: "Que precisam escalar operação sem depender de poucas pessoas-chave."
+    description: "Que precisam escalar operação com uma equipe enxuta"
   }
 ];
 
@@ -611,16 +612,15 @@ function PricingSection() {
 
               <div className="my-6">
                 <p className="text-5xl md:text-6xl font-bold text-white">
-                  12x de <span className="text-[#b668e9]">R$ 97</span>
+                  <span className="text-[#b668e9]">R$ 597</span>/mês
                 </p>
-                <p className="text-white/60 mt-2">ou R$ 997,00 à vista</p>
               </div>
 
               <button
                 onClick={openCalModal}
                 className="w-full bg-white text-[#2f0f39] hover:bg-gray-100 font-bold text-lg py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-1 mb-4"
               >
-                QUERO IMPLEMENTAR O SISTEMA AXIS AGORA
+                ASSINAR O PRODUTO AGORA
               </button>
 
               <div className="flex flex-col items-center gap-2 text-white/80 text-sm">
@@ -641,14 +641,6 @@ function PricingSection() {
 // ==================== FAQ SECTION ====================
 const faqData = [
   {
-    question: "Preciso saber programar?",
-    answer: "Não. Entregamos os fluxos prontos no n8n. Você só precisa conectar suas contas (Meta Ads, OpenAI, Airtable)."
-  },
-  {
-    question: "Quais custos extras terei?",
-    answer: "Você precisará de contas nas ferramentas: Airtable (plano gratuito disponível), n8n (self-hosted gratuito ou cloud ~$20/mês), OpenAI/Perplexity (~R$ 100-200/mês dependendo do uso). Total estimado: R$ 100-300/mês — menos que um café por dia."
-  },
-  {
     question: "Funciona para qualquer nicho?",
     answer: "Sim. O sistema adapta a pesquisa e análise para qualquer produto: e-commerce, infoprodutos, agências locais, SaaS, etc."
   },
@@ -662,7 +654,7 @@ const faqData = [
   },
   {
     question: "O sistema substitui completamente minha equipe?",
-    answer: "Não. Ele substitui o trabalho operacional e repetitivo: coleta de dados, organização, análise básica e geração de primeiros drafts. Sua equipe (ou você) continuará tomando as decisões estratégicas finais, mas com 10x mais insumos e 5x menos tempo gasto."
+    answer: "Não. Ele substitui o trabalho operacional, repetitivo e manual. Sua equipe (ou você) continuará tomando as decisões estratégicas finais, mas com um sistema robusto trabalhando 24/7."
   },
   {
     question: "Tem garantia?",

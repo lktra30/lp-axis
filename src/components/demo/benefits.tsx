@@ -28,7 +28,7 @@ const benefits = [
   },
   {
     title: "Entrega rápido",
-    description: "Escolha o plano que mais se encaixa no momento da sua empresa, ative e veja os impactos reais",
+    description: "Escolha o produto que mais se encaixa no momento da sua empresa, ative e veja os impactos reais",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -39,7 +39,7 @@ const benefits = [
   },
   {
     title: "Uso ilimitado",
-    description: "Assine quantos planos quiser e receba soluções referentes a cada um.",
+    description: "Assine quantos produtos quiser e receba soluções referentes a cada um.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -88,7 +88,7 @@ export default function Benefits() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            A Axis substitui freelancers não confiáveis e agências caras por uma **assinatura** mensal fixa,
+            A Axis substitui freelancers não confiáveis e agências caras por uma Assinatura mensal fixa,
             com soluções entregues tão rápido que você não vai querer ir a outro lugar.
           </motion.p>
         </div>
@@ -201,7 +201,7 @@ export default function Benefits() {
           transition={{ duration: 0.5, delay: 0.7 }}
         >
           <a href="#pricing" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-gradient-to-r from-[#2f0f39] to-[#6c2a8f] text-white  hover:shadow-lg hover:shadow-[#6c2a8f]/30 transition-all duration-300 transform hover:-translate-y-1">
-            Ver planos disponíveis
+            Ver produtos disponíveis
             <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

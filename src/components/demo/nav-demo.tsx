@@ -20,7 +20,7 @@ export function NavbarDemo() {
       link: "#techstack",
     },
     {
-      name: "Planos",
+      name: "Produtos",
       link: "#pricing",
     },
     {
@@ -39,7 +39,7 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
+            <NavbarButton href="https://app.axissdev.com/login" variant="secondary">Login</NavbarButton>
             <NavbarButton onClick={openCalModal} variant="primary">Agendar Call</NavbarButton>
           </div>
         </NavBody>
@@ -70,7 +70,7 @@ export function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
-                href="https://billing.stripe.com/p/login/cNi28r6Mza5c01T0Ji3VC00"
+                href="https://app.axissdev.com/login"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full cursor-pointer"
