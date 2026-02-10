@@ -19,7 +19,7 @@ const plans = [
       "Acesso a Novos Recursos"
     ],
     highlight: true,
-    link: "https://app.axissdev.com/login",
+    link: "https://buy.stripe.com/28EaEXaOSdz53NedGUd3i02",
     cta: "Adquirir Plano",
     available: true,
     badge: "Mais Popular"
@@ -38,7 +38,7 @@ const plans = [
       "Suporte via Chat"
     ],
     highlight: false,
-    link: "https://app.axissdev.com/login",
+    link: "https://buy.stripe.com/28EaEXaOSdz53NedGUd3i02",
     cta: "Adquirir Plano",
     available: true
   },
@@ -55,7 +55,7 @@ const plans = [
       "Testes A/B Automatizados"
     ],
     highlight: false,
-    link: "https://app.axissdev.com/login",
+    link: "https://buy.stripe.com/28EaEXaOSdz53NedGUd3i02",
     cta: "Adquirir Plano",
     available: true
   }

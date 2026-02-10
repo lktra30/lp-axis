@@ -39,7 +39,7 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton href="https://app.axissdev.com/login" variant="secondary">Login</NavbarButton>
+            <NavbarButton href="https://app.axissdev.com" variant="secondary">Login</NavbarButton>
             <NavbarButton onClick={openCalModal} variant="primary">Agendar Call</NavbarButton>
           </div>
         </NavBody>
@@ -70,7 +70,7 @@ export function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
-                href="https://app.axissdev.com/login"
+                href="https://app.axissdev.com"
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full cursor-pointer"
